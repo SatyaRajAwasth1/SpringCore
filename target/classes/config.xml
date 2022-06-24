@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--  beans using way 1 -->
+    <bean class="learn.conf.Address" name="Ram">
+        <property name="street" >
+            <value>baneshwor</value>
+        </property>
+        <property name="city">
+            <value>kathmandu</value>
+        </property>
+
+        <property name="country">
+            <value>
+                Nepal
+            </value>
+        </property>
+    </bean>
+
+    <!--Beans using way 2 -->
+    <bean class="learn.conf.Address" name="Sita">
+        <property name="street" value="basundhara"/>
+        <property name="city" value="kathmandu"/>
+        <property name="country" value="Nepal"/>
+    </bean>
+
+    <!-- bean using way 3 -->
+    <bean class="learn.conf.Address" name="Durgesh" p:street="jaya nagar" p:city="Delhi" p:country="Indida"/>
+
+</beans>

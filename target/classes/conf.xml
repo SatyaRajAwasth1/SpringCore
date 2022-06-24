@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="learn.config.collections.Student" name="Subash">
+        <property name="stdName" value="Sushant"/>
+        <property name="subjects">
+            <list>
+                <value>Physics</value>
+                <value>Math</value>
+                <value>FIT</value>
+                <value>CT</value>
+                <value>C prog</value>
+                <value>PST</value>
+            </list>
+        </property>
+        <property name="backSubs">
+            <set>
+                <value>Physcs</value>
+                <value>PST</value>
+                <value>math</value>
+            </set>
+        </property>
+        <property name="fees">
+            <map>
+                <entry key="1st Sem" value="3,50,000"/>
+            </map>
+        </property>
+        <property name="habits">
+            <props>
+                <prop key="GF">3</prop>
+                <prop key="drink">3 bottles</prop>
+                <prop key="eat">5 eggs a day</prop>
+            </props>
+        </property>
+
+    </bean>
+
+</beans>
