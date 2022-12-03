@@ -1,4 +1,4 @@
-package learn.autowiring;
+package learn.autowiring.usingXML;
 
 public class Teacher {
     private Subject subject;
@@ -23,7 +23,7 @@ public class Teacher {
     @Override
     public String toString() {
         return "Teacher{" +
-                ", teacherName='" + teacherName+"subject=" + subject
+                ", teacherName = '" + teacherName+" subject     = " + subject
                  + '\'' +
                 '}';
     }

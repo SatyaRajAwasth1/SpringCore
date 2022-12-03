@@ -1,4 +1,4 @@
-package learn.autowiring;
+package learn.autowiring.usingXML;
 
 public class Subject {
     private String subjName;
